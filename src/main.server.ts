@@ -10,7 +10,7 @@ import { ROUTES } from './routes';
 import { enableProdMode } from '@angular/core';
 enableProdMode();
 const app = express();
-const port = (process.env.PORT || 8000);
+const port = (process.env.PORT || 31286);
 const baseUrl = `http://localhost:${port}`;
 
 app.engine('html', ngExpressEngine({

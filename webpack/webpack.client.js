@@ -14,6 +14,14 @@ module.exports = {
   output: {
     filename: 'client.js'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/, // Only .css files
+        loader: 'style!css' // Run both loaders
+      }
+    ]
+  },
   target: 'web',
   plugins: [
     new HtmlWebpackPlugin({
