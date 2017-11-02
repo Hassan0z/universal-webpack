@@ -72,14 +72,14 @@
 											</td>
 											<td><h4><a style="display: flex; align-items: center; justify-content: center;">
 												<div class="schedule-team-details inline-block" style="display: flex; align-items: center;">
-													<img class="inline-block" src="{{ getFlag(match.t1n) }}" width="40" height="40">
+													<img class="inline-block" *ngIf="getFlag(match.t1n) !== ''" src="{{ getFlag(match.t1n) }}" width="40" height="40">
 													<div class="inline-block schedule-team-stats">
 														<p class="no-margin-bottom" style="margin: 0;">{{ match.t1n }}</p>
 													</div>
 												</div>
 												<span>vs</span>
 												<div class="schedule-team-details inline-block" style="display: flex; align-items: center;">
-													<img class="inline-block" src="{{ getFlag(match.t2n) }}" width="40" height="40">
+													<img class="inline-block" *ngIf="getFlag(match.t1n) !== ''" src="{{ getFlag(match.t2n) }}" width="40" height="40">
 													<div class="inline-block schedule-team-stats">
 														<p class="no-margin-bottom" style="margin: 0;">{{ match.t2n }}</p>
 													</div>

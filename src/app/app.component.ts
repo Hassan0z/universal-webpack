@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TransferState } from '../modules/transfer-state/transfer-state';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
-import './styles.css';
 
 @Component({
   selector: 'demo-app',

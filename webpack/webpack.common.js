@@ -1,5 +1,5 @@
 const { root } = require('./helpers');
-
+var webpack = require('webpack');
 /**
  * This is a common webpack config which is the base for all builds
  */
@@ -18,5 +18,11 @@ module.exports = {
       { test: /\.html$/, loader: 'raw-loader' }
     ]
   },
-  plugins: []
+  plugins: [
+    new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+    })
+  ]
 };
